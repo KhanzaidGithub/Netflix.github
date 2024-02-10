@@ -167,6 +167,7 @@
     background-color: black;
     flex-direction: column;
     border-top: 8px solid rgb(69, 69, 69);
+    padding: 80px 0px;
 }
 
 .items:hover {
@@ -187,3 +188,49 @@
     font-size: 22px;
     color: white;
 }
+/*Footer section*/
+
+.footer {
+    background-color: #111;
+    color: #757575;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  .footer ul li:first-child {
+    margin-left: 0;
+  }
+
+  .footer ul li a {
+    color: #757575;
+    text-decoration: none;
+  }
+
+  .footer ul li a:hover {
+    color: #fff;
+  }
+
+  .footer p {
+    margin-top: 20px;
+    color: #757575;
+  }
+
+  .footer .footer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
