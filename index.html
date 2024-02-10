@@ -83,7 +83,15 @@
         </div>
         <div class="items item1">
             <div>What is Netflix</div>
-            <div id="dropdown"><i class="fa-solid fa-plus"></i></div>
+            <button id="toggleButton">
+                <div id="dropdown"><i class="fa-solid fa-plus"></i></div>
+            </button>
+        </div>
+        <div id="content">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,documentaries, and more on thousands of internet-connected devices.   
+                You can watch as much as you want, whenever you want without a single commercial – all for one low
+                monthly price. There's always something new to discover and new TV shows and movies are added every
+                week!.</p>
         </div>
         <div class="items item1">
             <div>How much does Netflix cost?</div>
@@ -106,6 +114,13 @@
             <div id="dropdown"><i class="fa-solid fa-plus"></i></div>
         </div>
     </div>
+    <!--Sign Up form-->
+    <div class="signup-form">
+        <h2 style="color: white;padding: 9px 0px;">Ready to watch? Enter your email to create or restart your membership.
+        </h2>
+        <input type="text" class="signup-input" placeholder="Enter your email">
+        <button class="signup-button">Sign Up</button>
+      </div>
     <!--Footer Section-->
     <footer class="footer">
         <img src="./image/logo.png" alt="Netflix Logo" class="footer-logo">
@@ -129,3 +144,13 @@
 </body>
 
 </html>
+<script>
+    document.getElementById("toggleButton").addEventListener("click", function () {
+        var content = document.getElementById("content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    });
+</script>
